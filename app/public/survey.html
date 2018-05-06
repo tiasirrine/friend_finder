@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder Survey</title>
+    <!--JQUERY-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- MATERIALIZE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Survey Questions</h2>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s12">
+                <h4>First We Need To Check A Few Things.</h4>
+            </div>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Required" id="name" type="text" class="validate">
+                        <label for="first_name">Name</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input placeholder="Required" id="imageurl" type="text" class="validate">
+                        <label for="first_name">Link to Photo</label>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 1</h4>
+                <p>How would you rate your sanity?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q1">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label>1 being extremely unstable, 5 is solid.</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 2</h4>
+                <p>How upset does the sound of someone chewing make you?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q2">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">Doesn't even phase me.</option>
+                    <option value="2">Eh, there's worser things.</option>
+                    <option value="3">I'm not a fan.</option>
+                    <option value="4">Please stop.</option>
+                    <option value="5">GO INTO ANOTHER ROOM WHILE YOU EAT THAT.</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 3</h4>
+                <p>How cool are you under pressure?</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q3">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">Can't. Deal.</option>
+                    <option value="2">Not cool.</option>
+                    <option value="3">I'm smiling aren't I?</option>
+                    <option value="4">Give me a glass of wine and I'm good.</option>
+                    <option value="5">Cool as a cucumber.</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 4</h4>
+                <p>It is often difficult for you to relate to other people's feelings</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q4">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 5</h4>
+                <p>People can rarely upset you.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q5">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">I know I'm an angry person.</option>
+                    <option value="2">Well if they're being dumb, then yeah.</option>
+                    <option value="3">Eh. Let's not talk about it.</option>
+                    <option value="4">That's mostly true.</option>
+                    <option value="5">Never. I love everyone.</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 6</h4>
+                <p>It is often difficult for you to relate to other people's feelings.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q6">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">I just don't understand. I'm sorry.</option>
+                    <option value="2">Umm.. Sorry?</option>
+                    <option value="3">I try. Really, I do.</option>
+                    <option value="4">Yeah, I getchu.</option>
+                    <option value="5">Just call me Sympatheic Sally.</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 7</h4>
+                <p>In a discussion, truth should be more imporatnt than people's sensitivities.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q7">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 8</h4>
+                <p>You rarely get carriend away by fantasies and ideas.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q8">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 9</h4>
+                <p>You think that everyone's views should be respected regardless of whether they ares uuported by facts or
+                    not.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q9">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <h4>Question 10</h4>
+                <p>You feel more energetic after spending time with a group of people.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <select id="Q10">
+                    <option value="" disabled selected>Choose your rating</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <label>Rate your answer</label>
+            </div>
+        </div>
+        <div class="row">
+            <button class="btn waves-effect waves-light modal-trigger submit" type="submit" data-target="modal1" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </div>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>You're Perfect Match Is:</h4>
+                <h5 id="matchName"></h5>
+                <img src="" id="matchPic">
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--JavaScript at end of body for optimized loading-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        $(document).ready(function () {
+            $('.modal').modal();
+        });
+
+
+        // In this code below we create the Front-end JavaScript which "POSTS" our form data to our express server.
+        // In essence, when the user hits submit, jQuery grabs all of the fields then sends a post request to our api
+        // Our api recognizes the route (/api/tables)... and then runs the associated code (found in api-routes.js).
+        // In this case the associated code "saves" the data to the table-data.js file or waitinglist-data.js file
+
+        $(".submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Here we grab the form elements
+            var newMatch = {
+                name: $('#name').val().trim(),
+                photo: $("#imageurl").val().trim(),
+                scores: [
+                    $("#Q1").val(),
+                    $("#Q2").val(),
+                    $("#Q3").val(),
+                    $("#Q4").val(),
+                    $("#Q5").val(),
+                    $("#Q6").val(),
+                    $("#Q7").val(),
+                    $("#Q8").val(),
+                    $("#Q9").val(),
+                    $("#Q10").val()
+                ]
+            };
+
+            console.log(newMatch);
+
+            // This line is the magic. It"s very similar to the standard ajax function we used.
+            // Essentially we give it a URL, we give it the object we want to send, then we have a "callback".
+
+            var currentURL = window.location.origin;
+
+            $.post(currentURL + "/api/data", newMatch,
+                function (data) {
+                    console.log(data);
+                    if (data) {
+                        $("#matchName").text(data.name);
+                        $('#matchPic').attr("src", data.photo);
+                    };
+
+                });
+        });
+
+    </script>
+</body>
+
+</html>
